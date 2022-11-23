@@ -1,26 +1,11 @@
-import datetime
+from myclass import Client
 
+c1 = Client('Иван', 'Петров', 'Москва', 50)
+c2 = Client('Павел', 'Смирнов', 'Владимир', 150)
+c3 = Client('Алексендр', 'Иванов', 'Рязань', 56)
+clients = [c1, c2, c3]
+# print(clients[1])
 
-class Product:
-    max_quantity = 100000
-
-    def __init__(self, name, category, quantity_in_stock):
-        self.name = name
-        self.category = category
-        self.quantity_in_stock = quantity_in_stock
-
-    def is_available(self):
-        return True if self.quantity_in_stock > 0 else False
-
-
-class Food(Product):
-    is_critical = True
-    needs_to_be_refreshed = True
-    refresh_frequency = datetime.timedelta(days=1)
-
-
-eggs = Food(name="eggs", category="food", quantity_in_stock=5)
-print(eggs.max_quantity)
-eggs.max_quantity = 100
-print(eggs.max_quantity)
-print(eggs.is_available())
+for client in clients:
+    print(client.get_client())
+# print(c1)
