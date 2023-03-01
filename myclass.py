@@ -45,3 +45,4 @@ class Client:
 
     def get_client(self):
         return f'{self.name} {self.surname}, {self.city}'
+
