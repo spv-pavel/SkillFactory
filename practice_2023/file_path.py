@@ -29,7 +29,8 @@ def walk_desc(path=None):
         print("===")
 
 
-# path = os.path.join(os.getcwd(), 'imports')
+os.chdir("..")
+path = os.path.join(os.getcwd(), 'imports')
 # path = os.path.join(path, 'mylibrary')
-# print(path)
+print(path)
 walk_desc()
