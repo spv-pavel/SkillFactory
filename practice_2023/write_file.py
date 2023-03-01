@@ -51,16 +51,17 @@ with open('test.txt', 'rb') as f:
 # автоматически файл закрывается без f.close()
 
 # Создайте любой файл на операционной системе под название input.txt и построчно перепишите его в файл output.txt.
-with open('input.txt', 'r') as input_file:
-    with open('output.txt', 'w') as output_file:
-        for line in input_file:
-            output_file.write(line)
+# with open('input.txt', 'r') as input_file:
+#     with open('output.txt', 'w') as output_file:
+#         for line in input_file:
+    #         output_file.write(line)
+#
 
- """Дан файл numbers.txt, компоненты которого являются действительными числами
- (файл создайте самостоятельно и заполните любыми числами, в одной строке одно число).
-Найдите сумму наибольшего и наименьшего из значений и запишите результат в файл output.txt."""
-filename = 'numbers.txt'
-output = 'output.txt'
+#  """Дан файл numbers.txt, компоненты которого являются действительными числами
+#  (файл создайте самостоятельно и заполните любыми числами, в одной строке одно число).
+# Найдите сумму наибольшего и наименьшего из значений и запишите результат в файл output.txt."""
+# # filename = 'numbers.txt'
+# output = 'output.txt'
 
 # with open(filename) as f:
 #    min_ = max_ = float(f.readline())  # считали первое число
