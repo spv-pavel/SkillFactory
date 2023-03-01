@@ -30,7 +30,12 @@ def walk_desc(path=None):
 
 
 os.chdir("..")
-path = os.path.join(os.getcwd(), 'imports')
+path1 = os.path.join(os.getcwd(), 'imports', 'practice_2022')
 # path = os.path.join(path, 'mylibrary')
-print(path)
-walk_desc()
+print(path1)
+print(os.listdir())
+print(os.path.exists('imports'))
+print(os.path.exists('test.py'))
+if 'test.py' in os.listdir():
+    print(True)
+# walk_desc()
