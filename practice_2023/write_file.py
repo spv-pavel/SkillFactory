@@ -105,3 +105,18 @@ with open('test.txt', 'rb') as f:
 #    with open('output.txt', 'w') as output_file:
 #        for line in reversed(input_file.readlines()):
 #            output_file.write(line)
+#  ====================================================================
+#  Напишите контекстный менеджер, который умеет безопасно работать с файлами.
+# class OpenFile:
+#     def __init__(self, path, type):
+#         self.file = open(path, type)
+#
+#     def __enter__(self):
+#         return self.file
+#
+#     def __exit__(self, exc_type, exc_val, exc_tb):
+#         self.file.close()
+#
+#
+# with OpenFile('hello.txt', 'wt') as f:
+#     f.write('Мой контекстный менеджер делает то же самое!')
