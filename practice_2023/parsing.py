@@ -2,7 +2,7 @@ import requests  # импортируем наш знакомый модуль
 import lxml.html
 from lxml import etree
 
-html = requests.get('https://www.python.org/').content  # получим html главной странички официального сайта python
+html = requests.get('https://www.zubron.ru/').content  # получим html главной странички официального сайта python
 
 tree = lxml.html.document_fromstring(html)
 title = tree.xpath(
